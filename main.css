@@ -267,3 +267,77 @@ input[name="tab"]:checked+.tab-content {
     background: #333;
     color: #fff;
 }
+
+/* media query za main */
+/* Media query za prilagodbu layouta */
+/* Media query za prilagodbu layouta */
+@media (max-width: 768px) {
+    html, body {
+        display: block;
+        overflow: auto;
+    }
+    main {
+        flex-direction: column;
+    }
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+    .tab-container {
+        display: inline-block;
+        width: auto;
+        float: none;
+        background: none;
+        height: auto;
+    }
+    .tab-container label {
+        display: inline-block;
+        width: auto;
+        border-bottom: none;
+    }
+    .tab-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-left: 0;
+    }
+    .tab-content #naslovna {
+        margin-left: 0;
+        text-align: center;
+    }
+    .tab-content p {
+        width: 90%;
+        margin: 10px 15px;
+        padding: 0;
+        text-align: justify;
+    }
+    .tab-content ul {
+        width: 80%;
+        margin: 0 25px;
+        padding: 0;
+        text-align: center;
+    }
+    .tab-content table {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .content2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transform: translate3d(0, 0, 0);
+        height: auto;
+        width: 100%;
+    }
+    input[data-function*="swipe"]:checked ~ .content2 {
+        transform: translate3d(0, 0, 0);
+    }
+    input[data-function*="swipe"]:checked ~ .sidebar,
+    input[data-function*="swipe"]:checked ~ .sidebar .tabs-container {
+        width: 100%;
+    }
+}
