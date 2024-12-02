@@ -111,3 +111,63 @@ header {
    .nav-menu button:hover {
     background-color: #9a9a9a;
    }
+
+/*media query za header*/
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        height: auto;
+    }
+    .contact-info-links {
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .contact-info-links img {
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-info-links a {
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+    }
+    .social-media-links {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+    }
+    .header-nav {
+        flex-direction: column;
+        height: auto;
+    }
+    .logo-container {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .logo-container img {
+        height: 80px;
+        width: auto;
+    }
+    .nav-menu {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .nav-menu button {
+        width: 90%;
+        height: 40px;
+        font-size: 14px;
+    }
+    .nav-menu button:focus {
+        width: 90%;
+        height: 40px;
+        font-size: 14px;
+        background-color: #9a9a9a;
+    }
+}
