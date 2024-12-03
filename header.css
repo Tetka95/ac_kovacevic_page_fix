@@ -150,8 +150,8 @@ header {
         margin-bottom: 10px;
     }
     .logo-container img {
-        height: 80px;
-        width: auto;
+        height: auto;
+        width: 100%;
     }
     .nav-menu {
         width: 100%;
