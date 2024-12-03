@@ -30,4 +30,7 @@ main .main-container {
         margin: 5px;
         text-align: justify;
     }
+    main .main-container h1 {
+        text-align: center;
+    }
 }
