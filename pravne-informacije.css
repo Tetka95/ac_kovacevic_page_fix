@@ -18,3 +18,16 @@ main .main-container {
 .bold {
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    main .main-container {
+        width: 95%;
+        margin: 5px;
+        text-align: justify;
+    }
+}
