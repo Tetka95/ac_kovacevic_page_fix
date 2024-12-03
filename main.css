@@ -286,16 +286,17 @@ input[name="tab"]:checked+.tab-content {
         height: auto;
     }
     .tab-container {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
         width: auto;
         float: none;
-        background: none;
+        background: #100950;
         height: auto;
     }
     .tab-container label {
-        display: inline-block;
-        width: auto;
-        border-bottom: none;
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
     }
     .tab-content {
         width: 100%;
