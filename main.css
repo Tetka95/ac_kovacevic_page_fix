@@ -386,6 +386,13 @@ input[name="tab"]:checked+.tab-content {
         transition: transform 0.5s ease;
     }
     
+    .container .card.open .face.face1 {
+        background-color: #100950;
+    }
+    .container .card.open .face.face1 .content {
+        opacity: 1;
+    }
+
     .container .card.open .face.face2 {
         transform: translateY(150px);
     }
