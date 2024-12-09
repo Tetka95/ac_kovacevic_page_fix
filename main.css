@@ -394,7 +394,7 @@ input[name="tab"]:checked+.tab-content {
     }
 
     .container .card.open .face.face2 {
-        transform: translateY(150px);
+        transform: translateY(0);
     }
     
     .container .card {
